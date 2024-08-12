@@ -8,4 +8,3 @@ const apiResponse = (statusCode, message, data = null) => {
 };
 
 export default apiResponse;
-

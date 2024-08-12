@@ -20,12 +20,3 @@ const esmContent = fs
   .replace(/module\.exports\s*=\s*/, "export default ");
 
 fs.writeFileSync(path.join(distDir, "index.esm.js"), esmContent);
-
-// Run TypeScript declaration file generation (if needed)
-// exec('tsc --declaration --emitDeclarationOnly --outDir dist', (err, stdout, stderr) => {
-//   if (err) {
-//     console.error(`Error generating type declarations: ${stderr}`);
-//   } else {
-//     console.log('Type declarations generated successfully.');
-//   }
-// });
