@@ -1,0 +1,20 @@
+{
+  "name": "quick-response",
+  "version": "1.0.0",
+  "description": "API response message for Node JS application",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/km-saifullah/quick-response.git"
+  },
+  "author": "Khaled Md Saifullah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/km-saifullah/quick-response/issues"
+  },
+  "homepage": "https://github.com/km-saifullah/quick-response#readme"
+}
