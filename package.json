@@ -1,6 +1,6 @@
 {
   "name": "quick-response",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "API response message for Node JS application",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/km-saifullah/quick-response/issues"
   },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "api",
+    "api-response",
+    "quick-response",
+    "apiResponse"
+  ],
   "homepage": "https://github.com/km-saifullah/quick-response#readme"
 }
