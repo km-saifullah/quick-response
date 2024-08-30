@@ -50,11 +50,22 @@ import apiResponse from "quick-response";
 console.log(apiResponse(200, "Success", { id: 1 }));
 ```
 
+**Response**
+
+```javascript
+{
+  statusCode: 200,
+  message: 'Success',
+  data: { id: 1 },
+  timestamp: 'Fri Aug 30 2024'
+}
+```
+
 ## Usage with Express
 
 ```javascript
 import express from "express";
-import apiResponse from "apiResponse";
+import apiResponse from "quick-response";
 
 const app = express();
 const port = 8000;
@@ -64,6 +75,20 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => console.log("Server is running"));
+```
+
+**Result**
+
+```javascript
+{
+  "statusCode": 201,
+  "message": "User Created",
+  "data": {
+    "id": 1,
+    "name": "John Doe"
+  },
+  "timestamp": "Fri Aug 30 2024"
+}
 ```
 
 Happy Coding...👍
