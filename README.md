@@ -11,7 +11,7 @@ API response message for any Node JS application
 Install the package in your project
 
 ```bash
-npm quick-response
+npm install quick-response
 ```
 
 ## Usage
