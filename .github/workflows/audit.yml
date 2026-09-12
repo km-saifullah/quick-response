@@ -1,0 +1,23 @@
+name: Dependency Audit
+
+on:
+  schedule:
+    # Runs every Monday at 06:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {}
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: "npm"
+      - run: npm ci
+      - name: Audit all dependencies
+        run: npm audit --audit-level=moderate
+      - name: Check for outdated packages
+        if: always()
+        run: npm outdated || true
