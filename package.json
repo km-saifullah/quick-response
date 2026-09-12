@@ -36,7 +36,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint . --ext .ts",
-    "prepublishOnly": "npm run typecheck && npm run test && npm run build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepublishOnly": "npm run typecheck && npm run lint && npm run test && npm run build",
     "audit:check": "npm audit --omit=dev"
   },
   "repository": {
@@ -61,9 +63,13 @@
   ],
   "homepage": "https://github.com/km-saifullah/quick-response#readme",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/node": "^22.20.2",
+    "eslint": "^10.10.0",
+    "prettier": "^3.9.6",
     "tsup": "^8.5.1",
     "typescript": "^5.6.2",
+    "typescript-eslint": "^8.70.0",
     "vitest": "^5.0.0"
   },
   "overrides": {
