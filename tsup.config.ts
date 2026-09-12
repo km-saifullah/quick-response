@@ -9,4 +9,9 @@ export default defineConfig({
   clean: true,
   target: "es2020",
   minify: false,
+  outExtension({ format }) {
+    return {
+      js: format === "cjs" ? ".cjs" : ".js",
+    };
+  },
 });
